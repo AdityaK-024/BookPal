@@ -3,16 +3,16 @@
     padding: 0px;
 }
 body{
-    background-color: #fefae0;
+    background-color: #fbf8cc;
     font-family: 'Times New Roman', Times, serif;
 }
 nav {
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    height: 100px;
     align-items: center;
-    background-color:#023047;
-    color: #ffc300;
+    background-color:#353535;
+    color: #fca311;
 }
 nav ul{
     display: flex;
@@ -24,30 +24,29 @@ nav ul li{
 }
 nav ul li a {
  text-decoration: none;
- color:#ffc300;
+ color:#fca311;
 }
 nav a{
     text-decoration:none;
  color: black;
 }
 nav ul li a:hover {
-    color:#db7c26;
+    color:#ffb4a2;
     font-size: 1.02rem;
 }
 .left{
     font-size: 1.5rem;
-    /* background-color: black; */
 }
 .left span{
     font-size: 1.2rem;
     font-family: Verdana;
-    color: #db7c26;
+    color: #457b9d;
 }
 .firstsection {
     display: flex;
     justify-content: space-around;
     margin: 60px 0;
-    align-items: justify;
+    align-items: center;
 }
 
 .firstsection>div {
@@ -55,14 +54,11 @@ nav ul li a:hover {
     height: auto;
 }
 .leftsection {
-    font-size: 2.5rem; /* Increased font size for the quote */
+    font-size: 2.5rem; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
-    color: #f4a261;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-    /* padding: 20px; */
-    margin-top: 100px;
-    /* margin-left: 30px; */
+    color: #457b9d;
+    padding: 20px;
 }
 
 .leftsection div {
@@ -72,48 +68,117 @@ nav ul li a:hover {
     text-align: right;
 }
 .rightsection {
-    width: 30%;
-    height: 100vh;
+    width: 45%;
     padding: 20px;
+    border-left: solid 12px red;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.book-collage {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(3, 1fr); /* 3 rows */
-    /* gap: 10px; */
-    /* height: 100%; */
+.rightsection h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-.book-collage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.rightsection p {
+    color: #555;
+    font-size: 24px;
+    text-align: justify;
+}
+.books-section {
+    padding: 50px 0;
+    /* background-color: #fff; */
 }
 .books-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 1px;
 }
-.book-card{
+.book-card {
     width: 200px;
-    border-radius: 8px;
-    overflow: hidden;
-    /* background-color: #f0f0f0; */
-    /* box-shadow: 0px px px rgba(0,0,0,2); */
-    align-content: center;
     margin: 20px;
+    padding: 20px;
+    background-color: #cad2c5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
 }
-.book-card img{
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
     width: 100%;
     height: auto;
+    border-radius: 8px 8px 0 0;
 }
-.book-content{
-    padding: 16px;
-    color: #db7c26; 
+
+.book-content {
+    padding: 20px;
 }
-.book-content h3{
-    font-size: 28px;
-    margin-bottom: 8px;
+
+.book-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
 }
+
+.author {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+.add-to-list {
+    position: relative;
+    margin-top: 10px;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
