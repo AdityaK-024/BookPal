@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #fefae0;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    background-color:#023047;
+    color: #ffc300;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    }
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+nav ul li a {
+ text-decoration: none;
+ color:#ffc300;
+}
+nav a{
+    text-decoration:none;
+ color: black;
+}
+nav ul li a:hover {
+    color:#db7c26;
+    font-size: 1.02rem;
+}
+.left{
+    font-size: 1.5rem;
+    /* background-color: black; */
+}
+.left span{
+    font-size: 1.2rem;
+    font-family: Verdana;
+    color: #db7c26;
+}
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    align-items: justify;
+}
+
+.firstsection>div {
+    width: 30%;
+    height: auto;
+}
+.leftsection {
+    font-size: 2.5rem; /* Increased font size for the quote */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: #f4a261;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    /* padding: 20px; */
+    margin-top: 100px;
+    /* margin-left: 30px; */
+}
+
+.leftsection div {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #db7c26; 
+    text-align: right;
+}
+.rightsection {
+    width: 30%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.book-collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    /* gap: 10px; */
+    /* height: 100%; */
+}
+
+.book-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.books-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.book-card{
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    /* background-color: #f0f0f0; */
+    /* box-shadow: 0px px px rgba(0,0,0,2); */
+    align-content: center;
+    margin: 20px;
+}
+.book-card img{
+    width: 100%;
+    height: auto;
+}
+.book-content{
+    padding: 16px;
+    color: #db7c26; 
+}
+.book-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
