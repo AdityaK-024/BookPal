@@ -107,7 +107,11 @@ nav ul li a:hover {
     overflow: hidden;
     position: relative;
 }
-
+.book-popular h2{
+    font-size: 4rem;
+    text-align: center;
+    color: #457b9d;
+}
 .book-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
