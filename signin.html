@@ -9,27 +9,27 @@
 <body>
     <div class="main">
         <h1>Sign In</h1>
-        <form action="#">
-            <label for="fname">Enter Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        <form action="signin.php" method="post">
+            <label for="name">Enter Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
             <label for="email">Enter E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Enter E-mail">
+            <input type="email" name="email" id="email" placeholder="Enter E-mail" required>
             <label for="DOB">Enter Date of Birth</label>
-            <input type="date" name="DOB" id="DOB" placeholder="Enter Date of Birth">
-            <label for="password">Enter a Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password"
-                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$">
-            <label for="repassword">Confirm Password</label>
-            <input type="password" name="repassword" id="repassword" placeholder="Confirm Password"
-                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$">
+            <input type="date" name="DOB" id="DOB" placeholder="Enter Date of Birth" required>
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
             </select>
-            <div class="wrap"><button type="submit">Submit</button></div>
-
+            <label for="password">Enter a Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password"
+                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required>
+            <label for="repassword">Confirm Password</label>
+            <input type="password" name="repassword" id="repassword" placeholder="Confirm Password"
+                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required>
+                <div class="wrap"><button type="submit">Submit</button></div>
+                <p><a href="login.html">Already have an Account? Login here</a></p>
         </form>
     </div>
     <script src="signin.js"></script>
