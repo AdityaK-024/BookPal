@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Tracker</title>
+    <title>BookPal | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="home.css">
 </head>
 
@@ -14,8 +15,8 @@
             <div class="left">Book<span>Pal</span></div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Categories</a></li>
+                    <!-- <li><a href="Home.html">Home</a></li> -->
+                    <li><a href="categories.html">Categories</a></li>
                     <li><a href="/">Browse</a></li>
                     <li><a href="login.html" id="loginLogout">Login</a></li>
                 </ul>
@@ -37,9 +38,6 @@
                 </div>
             </div>
         </section>
-        <section>
-
-        </section>
         <section class="books-section">
             <div class="book-popular"><h2>Popular</h3></div>
             <div class="books-container">
@@ -57,8 +55,13 @@
                     <div class="book-content">
                         <h3>Fantastic Beasts</h3>
                         <p class="author">JK Rowling</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -75,8 +78,13 @@
                     <div class="book-content">
                         <h3>This is Going to Hurt</h3>
                         <p class="author">Adam Kay</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -93,8 +101,13 @@
                     <div class="book-content">
                         <h3>The Barefoot Investor</h3>
                         <p class="author">Scott Pape</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -111,8 +124,13 @@
                     <div class="book-content">
                         <h3>Dear Zoo</h3>
                         <p class="author">Rod Campbell</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -129,8 +147,13 @@
                     <div class="book-content">
                         <h3>Clean Code</h3>
                         <p class="author">Robert C. Martin</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -147,8 +170,13 @@
                     <div class="book-content">
                         <h3>Enchanted Forest</h3>
                         <p class="author">Johanna Basford</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -165,8 +193,13 @@
                     <div class="book-content">
                         <h3>1984</h3>
                         <p class="author">George Orwell</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
                 </div>
                 <div class="book-card">
@@ -181,10 +214,15 @@
                         </div>
                     </div>
                     <div class="book-content">
-                        <h3>Milk and Honey</h3>
-                        <p class="author">Rupi Kaur</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                        <h3>Bad Blood</h3>
+                        <p class="author">John Carreyou</p>
+                        <div class="rating" data-rating="4.5">
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star checked star"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                           </div>
                     </div>
             </div>
             <div class="book-card">
@@ -199,10 +237,15 @@
                     </div>
                 </div>
                 <div class="book-content">
-                    <h3>Bad Blood</h3>
-                    <p class="author">John Carreyou</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                    <h3>Milk and Honey</h3>
+                    <p class="author">Rupi Kaur</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star-half-o checked"></span>
+                       </div>
                 </div>
             </div>
             
@@ -218,10 +261,14 @@
                     </div>
                 </div>
                 <div class="book-content">
-                    <h3>Bad Blood</h3>
-                    <p class="author">John Carreyou</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        condimentum tortor magna, nec tincidunt sem lacinia vitae.</p>
+                    <h3>Homo Deus</h3>
+                    <p class="author">Yuval Noah Harari</p>
+                    <div class="rating" data-rating="4.5">
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star checked star"></span>
+                        <span class="fa fa-star checked star"></span>
+                       </div>
                 </div>
             </div>
             

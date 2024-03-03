@@ -53,42 +53,9 @@ nav ul li a:hover {
     width: 30%;
     height: auto;
 }
-.leftsection {
-    font-size: 2.5rem; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
-    color: #457b9d;
-    padding: 20px;
-}
 
-.leftsection div {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #db7c26; 
-    text-align: right;
-}
-.rightsection {
-    width: 45%;
-    padding: 20px;
-    border-left: solid 12px red;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.rightsection h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.rightsection p {
-    color: #555;
-    font-size: 24px;
-    text-align: justify;
-}
 .books-section {
     padding: 50px 0;
-    /* background-color: #fff; */
 }
 .books-container{
     display: flex;
@@ -96,9 +63,30 @@ nav ul li a:hover {
     flex-wrap: wrap;
     margin-top: 1px;
 }
+.books-more {
+    font-size: 25px;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 200px;
+}
+
+.books-more a {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.books-more a:hover {
+    background-color: #333;
+    color: white;
+}
+
 .book-card {
-    width: 200px;
-    margin: 20px;
+    width: 180px;
+    margin: 30px;
     padding: 20px;
     background-color: #cad2c5;
     border-radius: 8px;
@@ -136,6 +124,11 @@ nav ul li a:hover {
     color: orange;
 }
 
+.books-category-name h3{
+    font-size: 2rem;
+    text-align: center;
+    color: #ffb4a2;
+}
 .author {
     margin: 5px 0;
     font-size: 16px;
