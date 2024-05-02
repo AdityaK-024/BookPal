@@ -4,21 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookPal | Home</title>
+    <title>BookOasis | Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="home.css">
+    <style>
+        .rightsection {
+    width: 45%;
+    padding: 20px;
+    border-left: solid 12px red;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rightsection h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.rightsection p {
+    color: #555;
+    font-size: 24px;
+    text-align: justify;
+}
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Book<span>Pal</span></div>
+            <div class="left">Book<span>Oasis</span></div>
             <div class="right">
                 <ul>
                     <!-- <li><a href="Home.html">Home</a></li> -->
                     <li><a href="categories.html">Categories</a></li>
-                    <li><a href="/">Browse</a></li>
+                    <li><a href="Browse.html">Browse</a></li>
                     <li><a href="login.html" id="loginLogout">Login</a></li>
+                    <li><a href="aboutus.html" id="Aboutus">About Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +54,7 @@
             <div class="rightsection">
                 <div class="about-us">
                     <h2>About Us</h2>
-                    <p>Welcome to BookPal! We are your go-to place for discovering new books, connecting with fellow
+                    <p>Welcome to BookOasis! We are your go-to place for discovering new books, connecting with fellow
                         book lovers, and exploring various genres. Our mission is to make reading a delightful and
                         enriching experience for everyone.</p>
                 </div>
@@ -55,6 +77,10 @@
                     <div class="book-content">
                         <h3>Fantastic Beasts</h3>
                         <p class="author">JK Rowling</p>
+                        <!-- <a href="https://www.amazon.in/Fantastic-Beasts-Where-Find-Them/dp/1408803011" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="downloaded books/Art-photography/fantastic-beasts-and-where-to-find-them-by-j.k.-rowling.pdf" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -78,6 +104,10 @@
                     <div class="book-content">
                         <h3>This is Going to Hurt</h3>
                         <p class="author">Adam Kay</p>
+                        <!-- <a href="https://www.amazon.in/s?k=this+is+going+to+hurt&i=stripbooks&crid=19JSXLLBBZG8Q&sprefix=this+is+going+%2Cstripbooks%2C3068&ref=nb_sb_noss_2" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="downloaded book" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -101,6 +131,10 @@
                     <div class="book-content">
                         <h3>The Barefoot Investor</h3>
                         <p class="author">Scott Pape</p>
+                        <!-- <a href="https://www.amazon.in/Barefoot-Investor-Steps-Financial-Freedom/dp/1841127159/ref=sr_1_2?crid=2QDDBU1RBKF0T&dib=eyJ2IjoiMSJ9.tyVxlWURgvTZc_ivSEBlo5rObCiaML2v6EV_ZWg8e-5cFgmIcADwcheWaxYsm8xHWmU3IRj7_GpCg2vwA-oVGqf_fAOfxzcWjj4bYSoNJEmgKLYhvjxd3UkLqM8cnuQ6NhRcmAetrejX6TmD68JvI2mrSXjD6ZYtpm2BCYejr3W_uN8QLDHYprXqIxF0C-MtP6LWvFjF1uj7OoB66_UpK0T4TWXGeGt1f3BYXo_79vI.1QNyH2riSQE5VaVpzgx3DeZD4xkIlL1dBDzY_Zcoa6U&dib_tag=se&keywords=the+barefoot+investor&qid=1714376545&s=books&sprefix=the+barefoot+investo%2Cstripbooks%2C360&sr=1-2" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="downloaded books/business-finance-law books/The Barefoot Investor_ The Only Money Guide You’ll Ever Need ( PDFDrive ).pdf" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -124,6 +158,10 @@
                     <div class="book-content">
                         <h3>Dear Zoo</h3>
                         <p class="author">Rod Campbell</p>
+                        <!-- <a href="https://www.amazon.in/Dear-Zoo-Rod-Campbell/dp/1529017572/ref=sr_1_2?crid=2Q98T3TKCTL9X&dib=eyJ2IjoiMSJ9.ok8gOZPW00llNkPXV8zwkkpyfqftkXAsNVTZh1qA9nnvLXa7m3pru35tH_a6QX5dCZ8Obt3l__yQOS0CWofGg3q-ZpPx2YIE7HgVZ0CmzEVZeG212tQByNQyWIOgxXBUrcXu_gvzvFyMsSCgqnRnTV6mXW2AlQFc9saPkDBWTkFDVM2T_5SHpN_ni6Vx9KYXi2JKlsm9tgKtUk5xth4qWUcf5WDOCoedswYxG5zp4mE.a1P_tcsFXrVP7qpZ8k-4BRbuZFLT3lGaSKqWOUXhPtk&dib_tag=se&keywords=dear+zoo&qid=1714376700&sprefix=dear+z%2Caps%2C248&sr=8-2" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="downloaded books/childrens books/Dear-Zoo B1.pdf" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -147,6 +185,10 @@
                     <div class="book-content">
                         <h3>Clean Code</h3>
                         <p class="author">Robert C. Martin</p>
+                        <!-- <a href="https://www.amazon.in/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM/ref=sr_1_1?crid=3DL7HTAUQ5LVD&dib=eyJ2IjoiMSJ9.mdM4hIwN-T0boBKbgAuNsK66m5nB7ZMNjidWBuqU8c6YLtDOR29kiA3hQCR7B6QIsjBrnIj-3thNuOFUakzJVBGq1udckv8TdJFLG7uWzO3VC4U9J8H4JLfC322q0frjAsFPrfYqlH5qNBFxy5WByS_XrUDId1XRihzqSJdm8t_yRkzoFz90iq65RxgVupe81Cu-f2ax5oUPZaCWumk-VmU9Mm5BNHx_JUVHxkNyoI8.x0ia2mr8eO8R0Ger28IydUPjXglW34yW6TcjtdJDxPo&dib_tag=se&keywords=clean+code&qid=1714376778&sprefix=clean+code%2Caps%2C289&sr=8-1" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -170,6 +212,11 @@
                     <div class="book-content">
                         <h3>Enchanted Forest</h3>
                         <p class="author">Johanna Basford</p>
+                        <!-- <a href="https://www.amazon.in/Enchanted-Forest-Johanna-Basford/dp/1780674872/ref=sr_1_3?crid=BPVB6YFNCSKL&dib=eyJ2IjoiMSJ9.Y79jp12G3fENbrkCuwwKPQDpWcqjgMea0Kti5ljle37UV890OnnbcJ_StC-WLN_TsB89Y2foRaGmkfFGerPL3vB8RzZAIslVxF6Yd9Who7tqsiKdES7_D4LUnlWM36YXbIyRB68wwR_YLM33ezjNp8Ie9wBD-2spCfRh5O_bt_Y1wlAg9hKeA0WdXonH-rOSgY0YU6TCoZWA2IPu5hUTvy9uogXBz-ylEurfJaILxZ4.E8l-rFzM8auxjtw4a6F3wkg_cl4Cd1yJbD9dmT-FL_A&dib_tag=se&keywords=enchanted+forest&qid=1714376852&sprefix=enchanted+for%2Caps%2C241&sr=8-3" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="downloaded books" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
+                        
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -193,6 +240,10 @@
                     <div class="book-content">
                         <h3>1984</h3>
                         <p class="author">George Orwell</p>
+                        <!-- <a href="https://www.amazon.in/1984-George-Orwell/dp/9389053730/ref=sr_1_3?crid=14CNF95Q6AYRQ&dib=eyJ2IjoiMSJ9.ghTdIbaGnHUwbOH6426nkeJRLRfZ5ksOaUgrdPdT92oWiuMC9hFLeVeViK9x2VdrMWFZ9PnPZ-mJPFQo3pl4Y0i_QzaabXOB2Wcv4Fp_Rj693em-oIuToMAs3O3s3KgSFFRz4kGkhLMNgNpR5l70QT_faKPDNjroLLn-wbPfGkWMd5fiiWP_rf0zI5p7wTI7PJWMVebirprm-2m7SZOubCV-92loL-8OC_bdW9CfyjI.n6MZvYHumwoBvhs5yKtcSlzdfBkDnX-tCyQ8WDYShZ0&dib_tag=se&keywords=1984&qid=1714376915&sprefix=1984%2Caps%2C310&sr=8-3" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -216,6 +267,10 @@
                     <div class="book-content">
                         <h3>Bad Blood</h3>
                         <p class="author">John Carreyou</p>
+                        <!-- <a href="https://www.amazon.in/Bad-Blood-Secrets-Silicon-Startup/dp/1509868089/ref=sr_1_1?crid=285RQIWXDOLX5&dib=eyJ2IjoiMSJ9.WHGLjyjRoqra_foxv9crvmKaJZQAUXLX174FRHuHXzMNNveVMkpFp8lErYh3AgLBbu970U13Vhm8HunlVaCADvj_hMBBmAszPlc-XFv_zOEcpkCgEHOVVwKoT0eA_OQFeLZuClVUuKBsWa9UX_4aFFJEyF5cO3dHvPrxZVBmBD1eYnwZuHd9FUXZx-WsZ8roltcZOyBKmL0V6zvaYFhtjm_SvHC7Sk9bOM012Z9hhm0.dsIetEosh3iWGvHiNBDOd84B-kJyOParFH6WM4TXrLA&dib_tag=se&keywords=bad+blood&qid=1714376984&sprefix=bad+bl%2Caps%2C269&sr=8-1" target="_blank">Order</a> -->
+                        <div class="add-to-list">
+                            <a href="" class="download-link" download><button class="add-button">Download</button></a>
+                         </div>
                         <div class="rating" data-rating="4.5">
                             <span class="fa fa-star checked star"></span>
                             <span class="fa fa-star checked star"></span>
@@ -239,6 +294,10 @@
                 <div class="book-content">
                     <h3>Milk and Honey</h3>
                     <p class="author">Rupi Kaur</p>
+                    <!-- <a href="https://www.amazon.in/Milk-Honey-Rupi-Kaur/dp/144947425X/ref=sr_1_2?crid=CC081HFXVAX6&dib=eyJ2IjoiMSJ9.mrvWA4z0ZLAxKPjEe69VQ-AVxKuqBwVhXyfHJfBQ-yFAU4x-I7K4xVh7jX3Aqnzq738Fx3-7X_rrCX5YwgCr44rgOxloJBSW8RYim4U-_ewOWoh3qJq3W2zngGqIMsZ7yuiSFazKC3VwtZyv1ilVaeioYSFOVQLhD09bSfprnvt3IZH2117ct-8Vl61lG5L7gWHHNbBtsGMPB541UaysBQp10e-YKDXqeL6lfcexT8E.mdj_0YMsIN7scsqZBIFxjMEOhx63yZDC-0KnoZTDCzU&dib_tag=se&keywords=milk+and+honey&qid=1714377031&sprefix=milk+and+%2Caps%2C308&sr=8-2" target="_blank">Order</a> -->
+                    <div class="add-to-list">
+                        <a href="" class="download-link" download><button class="add-button">Download</button></a>
+                     </div>
                     <div class="rating">
                         <span class="fa fa-star checked star"></span>
                         <span class="fa fa-star checked star"></span>
@@ -248,6 +307,7 @@
                        </div>
                 </div>
             </div>
+            
             
             <div class="book-card">
                 <img src="Files/book-covers/Technology-Engineering/0000001.jpg" alt="">
@@ -263,6 +323,10 @@
                 <div class="book-content">
                     <h3>Homo Deus</h3>
                     <p class="author">Yuval Noah Harari</p>
+                    <!-- <a href="https://www.amazon.in/Brief-History-Tomorrow-Paperback-Harari/dp/B0CMTR2S9Q/ref=sr_1_2_mod_primary_new?crid=3ADMDDHJFWM4H&dib=eyJ2IjoiMSJ9.UF5aa4xAEAXiMBqx0Cw9PI9oBln7KNvMZYOkK3liUL2s7NhDCZ0L8R3LizeymXa1KJavaFGn-hUR8WfIxyPVK6cWcLNL6bXL3vW1DB_fYSzIThJPSfbMkNAsMmy3MWdLI5uyhM4GBnfyZtHJo9h3aMF7CRrb0BzGjK8wSqGLsEMCFoBZudRZlVX-C6D2DjV-7lmaZTID7DQ0W-VNuInKt2iy6hhS-BrB0TiTKefeIuA.j1s5Fr4PYBSWMcCQgcyCVibHGtiVU-PUkt9iol4VukE&dib_tag=se&keywords=homo+deus&qid=1714377084&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=homo+%2Caps%2C249&sr=8-2" target="_blank">Order</a> -->
+                    <div class="add-to-list">
+                        <a href="" class="download-link" download><button class="add-button">Download</button></a>
+                     </div>
                     <div class="rating" data-rating="4.5">
                         <span class="fa fa-star checked star"></span>
                         <span class="fa fa-star checked star"></span>
@@ -271,6 +335,7 @@
                        </div>
                 </div>
             </div>
+
             
         </section>
         <script src="home.js"></script>

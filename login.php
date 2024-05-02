@@ -16,11 +16,11 @@ if ($conn->connect_error) {
 // Check if the login form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
-    $email = $_POST["email"];
+    $username = $_POST["name"];
     $password = $_POST["password"];
 
     // Prepare SQL statement to fetch user
-    $stmt = $conn->prepare("SELECT name, email, password FROM signin_bookpal WHERE email = ?");
+    $stmt = $conn->prepare("SELECT name, email, password FROM signin_bookpal WHERE name = ?");
     
     // Check for preparation errors
     if ($stmt === false) {
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Bind parameters and execute the statement
-    $stmt->bind_param("s", $email);
+    $stmt->bind_param("s", $username);
     $stmt->execute();
 
     // Check for execution errors
@@ -53,11 +53,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit;
         } else {
             // Password is incorrect
-            echo "Invalid email or password. Please try again.";
+            echo "Invalid username or password. Please try again.";
         }
     } else {
         // User not found
-        echo "Invalid email or password. Please try again.";
+        echo "Invalid username or password. Please try again.";
     }
 
     // Close the statement

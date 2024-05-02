@@ -67,25 +67,7 @@ nav ul li a:hover {
     color: #db7c26; 
     text-align: right;
 }
-.rightsection {
-    width: 45%;
-    padding: 20px;
-    border-left: solid 12px red;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
 
-.rightsection h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.rightsection p {
-    color: #555;
-    font-size: 24px;
-    text-align: justify;
-}
 .books-section {
     padding: 50px 0;
     /* background-color: #fff; */
@@ -101,7 +83,7 @@ nav ul li a:hover {
     margin: 20px;
     padding: 20px;
     background-color: #cad2c5;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     overflow: hidden;
