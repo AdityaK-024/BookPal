@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     margin: 0;
 }
+
 .main { 
     background-color: #cad2c5; 
     border-radius: 15px; 
