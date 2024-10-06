@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#searchInput').keyup(function(){
         var query = $(this).val();
 
-        $.ajax({
+         $.ajax({
             url: 'browse_.php',
             type: 'GET',
             data: {query: query},
